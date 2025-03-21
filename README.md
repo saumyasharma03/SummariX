@@ -122,8 +122,7 @@ This project is licensed under the **MIT License**.
 ---
 
 ## 🌟 **Acknowledgments**
-- **Hugging Face** for speech-to-text models  
-- **spaCy** for text similarity analysis  
+- **Hugging Face** for speech-to-text models   
 - **MERN Stack** for full-stack development  
 
 ---
