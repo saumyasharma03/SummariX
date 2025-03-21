@@ -1,5 +1,5 @@
 import React from 'react';
-import './Result.css'; // Create styles if needed
+// Create styles if needed
 
 const Result = ({ transcribedText, similarityScore }) => {
   return (

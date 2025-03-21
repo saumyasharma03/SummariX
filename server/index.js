@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Directory to store uploaded files
-const uploadDir = '/home/saumya03/Downloads/summariX/SummariX/server/uploads';
+const uploadDir = '/home/saumya03/Downloads/SummariXfin/SummariX/server/uploads';
 
 // Ensure the upload directory exists
 if (!fs.existsSync(uploadDir)) {
