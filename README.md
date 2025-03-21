@@ -1,4 +1,4 @@
-# 🔊 SummariX - AI-Powered Speech-to-Text Summarization & Translation
+# SummariX - AI-Powered Speech-to-Text Summarization & Translation
 
 SummariX is an innovative **AI-powered speech-to-text and summarization tool** that allows users to **record or upload audio**, **transcribe speech into text**, and **generate concise summaries or translations** based on user needs.
 
