@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import os
 from Speech2Text import Speech_to_Text
 from Text2Text import compare_texts
-
+from textsummarization import summarize_text
 app = Flask(__name__)
 
 @app.route('/process_audio', methods=['POST'])
@@ -17,12 +17,14 @@ def process_audio():
     try:
         # Transcribe the audio
         transcribed_text = Speech_to_Text(audio_path)
+        sum_text = summarize_text(transcribed_text)
         similarity_score = compare_texts(expected_text, transcribed_text)
 
         return jsonify({
             "message": "File processed successfully",
             "transcribed_text": transcribed_text,
-            "similarity_score": similarity_score
+            "similarity_score": similarity_score,
+            "summarized_text": sum_text
         })
 
     except Exception as e:

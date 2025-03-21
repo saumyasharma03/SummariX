@@ -79,7 +79,7 @@ const Dashboard = () => {
         ) : processing ? (
           <div className="text-center text-gray-600">Processing, please wait...</div>
         ) : view === 'result' ? (
-          <Result transcribedText={resultData?.transcribed_text} similarityScore={resultData?.similarity_score} />
+          <Result transcribedText={resultData?.transcribed_text} similarityScore={resultData?.similarity_score} sum_text={resultData?.summarized_text} />
         ) : null}
       </div>
     </div>

@@ -48,7 +48,7 @@ def Speech_to_Text(audio_path):
     return transcription
 
 # Example usage
-audio_file_path = "/home/saumya03/Downloads/summariX/SummariX/server/uploads/1736885650082-recording.webm"  # Replace with your file path
+audio_file_path = "./temp_audio.wav"  # Replace with your file path
 try:
     transcription = Speech_to_Text(audio_file_path)
     print("Transcribed text:", transcription)
