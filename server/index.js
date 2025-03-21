@@ -2,16 +2,15 @@ import express from 'express';
 import cors from 'cors';
 import multer from 'multer';
 import fs from 'fs';
+import axios from 'axios';
 
 // Initialize express app
 const app = express();
-
-// Enable CORS and JSON parsing
 app.use(cors());
 app.use(express.json());
 
 // Directory to store uploaded files
-const uploadDir = 'C:/Users/DELL/OneDrive/文件/summ/backend/uploads';
+const uploadDir = '/home/saumya03/Downloads/summariX/SummariX/server/uploads';
 
 // Ensure the upload directory exists
 if (!fs.existsSync(uploadDir)) {
@@ -24,34 +23,38 @@ const storage = multer.diskStorage({
     cb(null, uploadDir);
   },
   filename: (req, file, cb) => {
-    cb(null, `${Date.now()}-${file.originalname}`); // Filename will include timestamp to avoid collisions
+    cb(null, `${Date.now()}-${file.originalname}`);
   },
 });
 
-const upload = multer({
-  storage: storage,
-  limits: { fileSize: 10000000 }, // 10MB file size limit
-});
+const upload = multer({ storage: storage, limits: { fileSize: 10000000 } });
 
-// Endpoint to handle audio file upload
-app.post('/submitmp3', upload.single('audioFile'), (req, res) => {
+app.post('/submitmp3', upload.single('audioFile'), async (req, res) => {
   if (!req.file) {
-    // No file uploaded
     return res.status(400).json({ message: 'No file uploaded' });
   }
 
-  // Log the uploaded file details
-  console.log('Uploaded file:', req.file);
+  const filePath = req.file.path; // Path of the uploaded file
+  const expectedText = "this is the sample text"; // Hardcoded expected text for now
 
-  // Respond with a success message and the file information
-  res.json({
-    message: 'File uploaded successfully',
-    file: req.file,
-  });
+  console.log(`File uploaded: ${filePath}`);
+
+  try {
+    // Send file path & expected text to Flask
+    const response = await axios.post('http://127.0.0.1:5001/process_audio', {
+      audio_path: filePath,
+      expected_text: expectedText
+    });
+
+    console.log("Response from Flask:", response.data);
+    res.json(response.data);
+  } catch (error) {
+    console.error(" Error calling Flask API:", error);
+    res.status(500).json({ message: 'Error processing file', error: error.message });
+  }
 });
 
-// Start the server
 const port = 5000;
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Express server running on port ${port}`);
 });
