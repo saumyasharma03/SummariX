@@ -107,7 +107,7 @@ Now, visit **`http://localhost:3000`** in your browser! 🎉
 ---
 
 ## 🛠️ **Contributing**
-We welcome contributions! Follow these steps:
+Contributions are welcomed! Follow these steps:
 1. **Fork the repo** 🍴  
 2. **Create a new branch** (`git checkout -b feature-name`)  
 3. **Make your changes & commit** (`git commit -m "Added new feature"`)  
