@@ -104,28 +104,7 @@ npm start
 
 Now, visit **`http://localhost:5173`** in your browser! 🎉  
 
----
-
-## 🛠️ **Contributing**
-Contributions are welcomed! Follow these steps:
-1. **Fork the repo** 🍴  
-2. **Create a new branch** (`git checkout -b feature-name`)  
-3. **Make your changes & commit** (`git commit -m "Added new feature"`)  
-4. **Push to GitHub** (`git push origin feature-name`)  
-5. **Create a pull request** 📩  
-
----
-
-## 📜 **License**
-This project is licensed under the **MIT License**.
-
----
-
-## 🌟 **Acknowledgments**
-- **Hugging Face** for speech-to-text models   
-- **MERN Stack** for full-stack development  
-
----
-
 ### **🚀 Start Summarizing Smarter with SummariX Today!**
+---
+This project is licensed under the **MIT License**.
 
