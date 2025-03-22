@@ -102,7 +102,7 @@ cd frontend
 npm start
 ```
 
-Now, visit **`http://localhost:3000`** in your browser! 🎉  
+Now, visit **`http://localhost:5173`** in your browser! 🎉  
 
 ---
 
