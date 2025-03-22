@@ -7,29 +7,28 @@ Designed for **efficiency and accuracy**, SummariX leverages **cutting-edge NLP 
 ---
 
 ## **Salient Features**
-✔ ** Live Speech Recording & Upload Support**  
-   - Users can **record audio in real time** or **upload pre-recorded files** for processing.  
-
-✔ ** High-Accuracy Speech-to-Text Conversion**  
-   - Uses **Hugging Face Models** to transcribe audio with high fidelity.  
-
-✔ ** AI-Powered Summarization & Translation**  
+   ** Live Speech Recording & Upload Support**  
+   - Users can **record audio in real time** or **upload pre-recorded files** for processing.
+     
+   ** High-Accuracy Speech-to-Text Conversion**  
+   - Uses **Hugging Face Models** to transcribe audio with high fidelity.
+   ** AI-Powered Summarization & Translation**  
    - Generates **concise summaries** or **translated versions** of audio transcripts.  
 
-✔ ** Advanced Text Similarity Analysis**  
+   ** Advanced Text Similarity Analysis**  
    - Uses **spaCy's `en_core_web_sm` model** to compare text and check similarity scores.  
-
-✔ ** Multiple Use Cases**  
+   
+   ** Multiple Use Cases**  
    - 📌 **Meeting Minutes Generation**  
    - 📌 **Lecture Summarization**  
    - 📌 **Audiobook Transcription & Translation**  
    - 📌 **Podcast Highlights Extraction**  
    - 📌 **Interview & Research Documentation**  
 
-✔ ** User-Friendly Interface**  
+   ** User-Friendly Interface**  
    - Available as a **web application (MERN stack)** for a seamless experience.  
 
-✔ ** Flexible & Extensible**  
+   ** Flexible & Extensible**  
    - Can be customized for **different speech models** or **additional NLP features**.  
 
 ---
@@ -51,7 +50,7 @@ SummariX is built using a **MERN (MongoDB, Express.js, React.js, Node.js) stack*
 - **Spacy Model: en_core_web_sm** (for summarization)
 ---
 
-## 🎯 **How It Works**
+## **How It Works**
 1️⃣ **Record or Upload Audio**  
 2️⃣ **AI Transcribes Speech to Text**  
 3️⃣ **SummariX Summarizes or Translates the Text**  
@@ -59,7 +58,7 @@ SummariX is built using a **MERN (MongoDB, Express.js, React.js, Node.js) stack*
 
 ---
 
-## 🚀 **Installation & Setup**
+##  **Installation & Setup**
 ### **1️⃣ Clone the Repository**
 ```bash
 git clone https://github.com/saumyasharma03/SummariX.git
