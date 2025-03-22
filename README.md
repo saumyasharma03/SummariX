@@ -1,6 +1,6 @@
 # SummariX - AI-Powered Speech-to-Text Summarization & Translation
 
-SummariX is an innovative **AI-powered speech-to-text and summarization tool** that allows users to **record or upload audio**, **transcribe speech into text**, and **generate concise summaries or translations** based on user needs.
+SummariX is an AI-powered tool that transcribes speech to text, generates concise summaries, and supports multilingual translations. It features live speech recording, text similarity analysis, and a user-friendly MERN-based web application. The platform integrates Hugging Face’s wav2vec2 model for transcription, MBart for language translation, spaCy for NLP tasks, and Auth0 with JWT authentication for secure user management.
 
 Designed for **efficiency and accuracy**, SummariX leverages **cutting-edge NLP models** to streamline meeting minutes, lecture notes, audiobook translations, and much more!
 
