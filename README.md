@@ -48,7 +48,7 @@ SummariX is built using a **MERN (MongoDB, Express.js, React.js, Node.js) stack*
 
 ### **📌 AI & NLP Models**
 - **Hugging Face API: facebook/wav2vec2-base-960h** (for Speech-to-Text conversion)
-- **Spacy Model: en_core_web_sm** (for Speech-to-Text conversion)
+- **Spacy Model: en_core_web_sm** (for summarization)
 ---
 
 ## 🎯 **How It Works**
